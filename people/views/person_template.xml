@@ -1,0 +1,28 @@
+<odoo>
+  <template id="person_card_template" inherit_id="website.layout" name="Website Persons">
+    <xpath expr="//main" position="inside">
+      <div class="row">
+        <t t-foreach="persons" t-as="person">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <t t-esc="person.full_name"/>
+                </h5>
+                <p class="card-text">Sex:
+                  <t t-esc="person.sex"/>
+                </p>
+                <p class="card-text">Age:
+                  <t t-esc="person.age"/>
+                </p>
+                <p class="card-text">Company:
+                  <t t-esc="person.company_id.name"/>
+                </p>
+              </div>
+            </div>
+          </div>
+        </t>
+      </div>
+    </xpath>
+  </template>
+</odoo>

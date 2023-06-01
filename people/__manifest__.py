@@ -1,0 +1,23 @@
+{
+    "name": "People",
+    "version": "1.0",
+    "summary": "Module for managing people",
+    "description": "This module allows you to create and manage people.",
+    "category": "Uncategorized",
+    "author": "Name",
+    "website": "https://www.example.com",
+    "depends": ["website", "web", "base"],
+    "data": [
+        "views/person_view.xml",
+        "security/ir.model.access.csv",
+        "views/person_template.xml",
+        "views/person_form.xml",
+        "data/menu.xml",
+        "views/success.xml",
+    ],
+    "demo": [],
+    "license": "AGPL-3",
+    "installable": True,
+    "application": False,
+    "auto_install": False,
+}

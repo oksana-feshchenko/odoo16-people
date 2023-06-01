@@ -1,0 +1,55 @@
+<odoo>
+  <data>
+    <!-- List View -->
+    <record id="view_persons_list" model="ir.ui.view">
+      <field name="name">persons.list</field>
+      <field name="model">persons.person</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="full_name"/>
+          <field name="sex"/>
+          <field name="age"/>
+          <field name="company_id"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_persons_form" model="ir.ui.view">
+      <field name="name">persons.form</field>
+      <field name="model">persons.person</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="first_name"/>
+            <field name="last_name"/>
+            <field name="full_name" readonly="1"/>
+            <field name="birthday"/>
+            <field name="age" readonly="1"/>
+            <field name="sex"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <record id="action_persons" model="ir.actions.act_window">
+      <field name="name">People</field>
+      <field name="res_model">persons.person</field>
+      <field name="view_mode">tree,kanban,form</field>
+      <field name="type">ir.actions.act_window</field>
+    </record>
+
+    <menuitem id="menu_website_people"
+              name="People"
+              sequence="95"
+              groups="base.group_user"
+              web_icon="website,static/description/icon.svg"/>
+
+    <menuitem id="menu_website_people_list"
+              name="List of people"
+              sequence="30"
+              parent="people.menu_website_people"
+              action="action_persons"/>
+
+  </data>
+</odoo>
