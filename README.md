@@ -1,7 +1,9 @@
 # Person Odoo Project
 
 This is a custom Odoo project for managing person records.
-
+![img_1.png](img_1.png)
+![img.png](img.png)
+![img_2.png](img_2.png)
 ## Features
 
 - Create person records
@@ -12,34 +14,34 @@ This is a custom Odoo project for managing person records.
 ## Installation
 
 
-# Clone the repository to your local machine
+1. Clone the repository to your local machine
 ```
 git clone https://github.com/your-username/person-odoo-project.git
 ```
 
-# Create a new virtual environment
+2.  Create a new virtual environment
 ```
 python3 -m venv env
 ```
 
-# Activate the virtual environment (Linux/Mac)
+3. Activate the virtual environment (Linux/Mac)
 ```
 source env/bin/activate
 ```
 
-# Activate the virtual environment (Windows)
+4.  Activate the virtual environment (Windows)
 ```
 env\Scripts\activate
 ```
 
-# Install the required dependencies
+5. Install the required dependencies
 ```
 pip install -r requirements.txt
 ```
 
-# Configure the database connection
+6. Configure the database connection
 # - Create a new PostgreSQL database for the project
 # - Update the `odoo.conf` file with the appropriate database credentials
 
-# Run the Odoo server
+7. Run the Odoo server
 
