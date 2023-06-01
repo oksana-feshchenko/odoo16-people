@@ -16,7 +16,7 @@ This is a custom Odoo project for managing person records.
 
 1. Clone the repository to your local machine
 ```
-git clone https://github.com/your-username/person-odoo-project.git
+git clone https://github.com/oksana-feshchenko/odoo16-people.git
 ```
 
 2.  Create a new virtual environment
